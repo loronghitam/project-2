@@ -3,7 +3,7 @@
         <li class="active"><a href="{{url('/')}}">Home</a></li>
         <li><a href="{{url('/product')}}">Product</a></li>
         <li><a href="{{url('/profile')}}">Profile Perusahaan</a></li>
-        <li><a href="{{url('/menu')}}">Menu</a></li>
+        <li><a href="{{url('/blog')}}">Menu</a></li>
     </ul>
 
     <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right menu-absolute">

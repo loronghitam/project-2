@@ -90,7 +90,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <img src="images/img_v_2-min.jpg" alt="image" class="img-fluid rounded">
+                    <img src="{{asset('asset/landingpage/images/img_v_2-min.jpg')}}" alt="image" class="img-fluid rounded">
                 </div>
                 <div class="col-lg-6 pl-lg-5">
                     <h3 class="mb-4 font-weight-bold">Who We Are</h3>

@@ -125,10 +125,10 @@
 <script src="{{asset('asset/admin/plugins/summernote/summernote-bs4.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('asset/admin/dist/js/adminlte.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{asset('asset/admin/dist/js/demo.js')}}"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{asset('asset/admin/dist/js/pages/dashboard.js')}}"></script>
+{{--<!-- AdminLTE for demo purposes -->--}}
+{{--<script src="{{asset('asset/admin/dist/js/demo.js')}}"></script>--}}
+{{--<!-- AdminLTE dashboard demo (This is only for demo purposes) -->--}}
+{{--<script src="{{asset('asset/admin/dist/js/pages/dashboard.js')}}"></script>--}}
 {{-- Datatables --}}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>

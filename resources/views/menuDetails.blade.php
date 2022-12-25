@@ -1,7 +1,7 @@
 @extends('landingpage.app')
 
 @section('content')
-    <div class="hero-slant overlay" data-stellar-background-ratio="0.5" style="background-image: url('http://uas.test/images/blog/{{$blog->image}}')">
+    <div class="hero-slant overlay" data-stellar-background-ratio="0.5" style="background-image: url('http://project-2.test/images/blog/{{$blog->image}}')">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-7 intro text-center">
@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <div class="slant" style="background-image: url('http://uas.test/asset/landingpage/images/slant.svg');"></div>
+        <div class="slant" style="background-image: url('http://project-2.test/asset/landingpage/images/slant.svg');"></div>
     </div>
 
     <div class="site-section">

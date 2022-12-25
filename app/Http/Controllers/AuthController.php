@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -39,6 +40,18 @@ class AuthController extends Controller
     {
         Auth::logout();
         return redirect()->to('/');
+    }
+
+    public function edit(Request $request)
+    {
+        User::where('id', '=', auth()->user()->id)->update([
+            'name' => $request->name,
+            'nim' => $request->nim,
+            'email' => $request->email,
+            'password' => $request->password,
+        ]);
+
+        return url('user');
     }
 
 }

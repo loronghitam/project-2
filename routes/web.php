@@ -27,17 +27,17 @@ Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
 
-Route::get('/menu',[PageController::class,'menu']);
-Route::get('/menu/{slug}',[PageController::class,'menuDetails']);
+Route::get('/blog',[PageController::class,'menu']);
+Route::get('/blog/{slug}',[PageController::class,'menuDetails']);
+Route::get('/login', function () {
+    return view('admin.login');
+});
 
 Route::post('/login', [AuthController::class,'login'])->name('login');
 Route::get('/menudetails', function () {
     return view('menuDetails');
 });
 
-Route::get('/blog', function () {
-    return view('admin.page.blog');
-})->name('blog');
 
 
 Route::middleware('auth')->group(function () {
@@ -54,6 +54,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/blogs/{blog_id}', [BlogController::class,'destroy']);
 
     Route::get('/dashboard', [PageController::class,'dashboard']);
+    Route::post('/user', [AuthController::class,'edit'])->name('edit');
+    Route::get('/user', function () {
+        return view('admin.page.profile');
+    });
 
     Route::post('/logout', [AuthController::class,'logout'])->name('logout');
 

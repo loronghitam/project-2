@@ -1,7 +1,7 @@
 @extends('landingpage.app')
 
 @section('content')
-    <div class="hero-slant overlay" data-stellar-background-ratio="0.5" style="background-image: url('images/hero-min.jpg')">
+    <div class="hero-slant overlay" data-stellar-background-ratio="0.5" style="background-image: url('asset/landingpage/images/hero-min.jpg')">
 
         <div class="container">
             <div class="row align-items-center justify-content-center">
@@ -19,7 +19,7 @@
 
         </div>
 
-        <div class="slant" style="background-image: url('images/slant.svg');"></div>
+        <div class="slant" style="background-image: url('asset/landingpage/images/slant.svg');"></div>
     </div>
     <div class="site-section bg-light" id="blog-section">
         <div class="container">
@@ -34,12 +34,12 @@
                 @foreach($blog as $data)
                     <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
                         <div class="blog_entry">
-                            <a href="{{ url('menu/'. $data->slug) }}"><img src="{{ asset('images/blog/' . $data->image)}}" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
+                            <a href="{{ url('blog/'. $data->slug) }}"><img src="{{ asset('images/blog/' . $data->image)}}" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
                             <div class="p-4 bg-white">
-                                <h3><a href="{{ url('menu/'. $data->slug) }}">{{$data->title}}</a></h3>
+                                <h3><a href="{{ url('blog/'. $data->slug) }}">{{$data->title}}</a></h3>
                                 <span class="date">{{\Illuminate\Support\Carbon::make($data->created_at)->diffForHumans()}}</span>
                                 <p>{!! \Illuminate\Support\Str::limit($data->body, 250) !!}</p>
-                                <p class="more"><a href="{{ url('menu/'. $data->slug) }}">Continue reading...</a></p>
+                                <p class="more"><a href="{{ url('blog/'. $data->slug) }}">Continue reading...</a></p>
                             </div>
                         </div>
                     </div>
